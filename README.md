@@ -13,7 +13,7 @@ it in a better and more efficient way. At first I started by editing that
 plugin to make it use less resources and do things in a better way (AFAIK).
 But later, I ended up rewriting the whole thing from scratch (ofc it is based
 on amx_super so a lot of resemblance can be found). I hope I succeeded in
-my mition. I am not the best coder there is, but I think I have some good
+my mission. I am not the best coder there is, but I think I have some good
 knowledge in scripting (I hope).
 
 Plugins Included
