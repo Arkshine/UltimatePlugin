@@ -390,7 +390,7 @@ enum ( ) {
 
 /* Constantes */
 new const g_strPluginName[ ]		= "UltimatePlugin";
-new const g_strPluginVersion[ ]		= "0.0.1b";
+new const g_strPluginVersion[ ]		= "0.0.2b";
 new const g_strPluginAuthor[ ]		= "tonykaram1993";
 new const g_strPluginPrefix[ ]		= PLUGIN_PREFIX;
 
