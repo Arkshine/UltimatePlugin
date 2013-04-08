@@ -2,6 +2,8 @@ UltimatePlugin
 ==============
 by tonykaram1993
 
+NOTE: this plugin is still in beta and testing is in process. However because it is a very big plugin, and plus the fact that I do not have access to an online server, some things cannot be tested. I would appreciate if you tested it and report any problem or things that needs fixing.
+
 We all know the famous amx_super plugin. Most servers use it as a wonderful
 administrative tool to let admins take control over their servers and manage
 it in a better and more efficient way. At first I started by editing that
