@@ -113,7 +113,14 @@
 /*
 	Change Log:
 	
-	v0.0.1	beta:	plugin written
+	+ something added/new
+	- something removed
+	* important note
+	x bug fix or improvement
+	
+	v0.0.1	beta:	* plugin written
+	v0.0.2	beta:	x removed afk task check when last player leaves server
+			x re-initialized afk task check when player joins server 
 */
 
 
@@ -384,7 +391,7 @@ enum ( ) {
 /* Constantes */
 new const g_strPluginName[ ]		= "UltimatePlugin";
 new const g_strPluginVersion[ ]		= "0.0.1b";
-new const g_strPluginAuthor[ ]		= "n0br41ner";
+new const g_strPluginAuthor[ ]		= "tonykaram1993";
 new const g_strPluginPrefix[ ]		= PLUGIN_PREFIX;
 
 #if defined GREEN_CHAT
@@ -786,6 +793,14 @@ public client_disconnect( iPlayerID ) {
 	get_players( iPlayers, iNum );
 	
 	if( !iNum ) {
+		if( task_exists( TASK_AFK_CHECK ) ) {
+			remove_task( TASK_AFK_CHECK );
+		}
+		
+		if( task_exists( TASK_AFK_BOMBCHECK ) ) {
+			remove_task( TASK_AFK_BOMBCHECK );
+		}
+		
 		return PLUGIN_CONTINUE;
 	}
 	
@@ -815,6 +830,14 @@ public client_disconnect( iPlayerID ) {
 }
 
 public client_authorized( iPlayerID ) {
+	if( !task_exists( TASK_AFK_CHECK ) ) {
+		set_task( float( AFK_FREQUENCY ), "Task_AFK_Check",	TASK_AFK_CHECK,		_, _, "b" );
+	}
+	
+	if( !task_exists( TASK_AFK_BOMBCHECK ) ) {
+		set_task( float( AFK_FREQUENCY ), "Task_AFK_BombCheck",	TASK_AFK_BOMBCHECK,	_, _, "b" );
+	}
+	
 	static iPlayers[ 32 ], iNum, iTempID, iLoop;
 	get_players( iPlayers, iNum );
 	
