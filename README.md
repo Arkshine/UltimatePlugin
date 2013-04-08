@@ -61,7 +61,7 @@ Plugins Included
 
 Installation Instructions
 =========================
-1. Compile the 'UltimatePlugins.sma' plugin (compiling tutorial http://wiki.amxmodx.org/Compiling_Plugins_(AMX_Mod_X)/ ).
+1. Compile the 'UltimatePlugins.sma' plugin (compiling tutorial http://wiki.amxmodx.org/Compiling_Plugins_(AMX_Mod_X) ).
 2. Place the compiled plugin (in this case 'UltimatePlugins.amxx') inside the 'addons/amxmodx/plugins' folder.
 3. Navigate to and open 'addons/amxmodx/config/plugins.ini'.
 4. Search for 'adminchat.amxx' and write, exactely above it, 'UltimatePlugin.amxx' (whitout quotes).
