@@ -67,3 +67,9 @@ Installation Instructions
 4. Search for 'adminchat.amxx' and write, exactely above it, 'UltimatePlugin.amxx' (whitout quotes).
 5. Place the 'UltimatePlugin.cfg' file inside the 'addons/amxmodx/configs' folder.
 6. Restart or change the map on your server in order to load the plugin.
+
+Notes
+=====
+* To report an issue with the plugin or even suggest an improvement, please do so in here https://github.com/tonykaram1993/UltimatePlugin/issues/new .
+* To view the full change log of the plugin, please go here https://github.com/tonykaram1993/UltimatePlugin/blob/master/CHANGELOG.md
+* If you would like to talk to me in private, send me an e-mail to the following e-mail address tonykaram1993@gmail.com .
