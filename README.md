@@ -58,3 +58,12 @@ Plugins Included
 	No More Rcon				(by ??)
 	AFK Manager				(by hoboman)
 	Player IP				(by tonykaram1993)
+
+Installation Instructions
+=========================
+1. Compile the 'UltimatePlugins.sma' plugin (compiling tutorial http://wiki.amxmodx.org/Compiling_Plugins_(AMX_Mod_X)/ ).
+2. Place the compiled plugin (in this case 'UltimatePlugins.amxx') inside the 'addons/amxmodx/plugins' folder.
+3. Navigate to and open 'addons/amxmodx/config/plugins.ini'.
+4. Search for 'adminchat.amxx' and write, exactely above it, 'UltimatePlugin.amxx' (whitout quotes).
+5. Place the 'UltimatePlugin.cfg' file inside the 'addons/amxmodx/configs' folder.
+6. Restart or change the map on your server in order to load the plugin.
